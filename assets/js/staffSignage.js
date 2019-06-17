@@ -17,9 +17,9 @@ function updateTime(){
 
 setInterval(updateTime, 1000);
 
-/*
+
 const Http = new XMLHttpRequest();
-const url = "https://sheets.googleapis.com/v4/spreadsheets/1rf3Ni0TRr6paXqN-kX33L292RhX1vTPBbw4diIOL6EY?ranges=Sheet1&key={302308272083-ve340842p2h65jhmosgm2qatigsu2rsi.apps.googleusercontent.com}";
+const url = "https://sheets.googleapis.com/v4/spreadsheets/1GnI7OZ-uzE4qzCQh8zsHNFi9yA9z6_z7KMUg14yZHYg?ranges=Sheet1&fields=sheets%2Fdata%2FrowData%2CspreadsheetUrl&key={AIzaSyAQQWeauYhpITuv3oyMfBenmj27TI7OOtA}";
 Http.open("GET", url);
 Http.send();
 
@@ -27,4 +27,4 @@ Http.onreadystatechange=(e)=>{
 	console.log(Http.responseText)
 }
 
-*/
+
