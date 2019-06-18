@@ -1,4 +1,4 @@
-console.log("staffSignage.js is online");
+
 
 //  https://docs.google.com/spreadsheets/d/1rf3Ni0TRr6paXqN-kX33L292RhX1vTPBbw4diIOL6EY/edit#gid=0
 
