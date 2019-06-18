@@ -19,9 +19,9 @@ setInterval(updateTime, 1000);
 
 
 const Http = new XMLHttpRequest();
-const url = "https://sheets.googleapis.com/v4/spreadsheets/1GnI7OZ-uzE4qzCQh8zsHNFi9yA9z6_z7KMUg14yZHYg?ranges=Sheet1&fields=sheets%2Fdata%2FrowData%2CspreadsheetUrl&key={AIzaSyAQQWeauYhpITuv3oyMfBenmj27TI7OOtA}";
+const url = "https://sheets.googleapis.com/v4/spreadsheets/1GnI7OZ-uzE4qzCQh8zsHNFi9yA9z6_z7KMUg14yZHYg?ranges=Sheet1&fields=sheets%2Fdata%2FrowData%2CspreadsheetUrl&key=AIzaSyAQQWeauYhpITuv3oyMfBenmj27TI7OOtA";
 Http.open("GET", url);
-Http.send();
+Http.send();                                                                                                                                                                                                                      
 
 Http.onreadystatechange=(e)=>{
 	console.log(Http.responseText)
