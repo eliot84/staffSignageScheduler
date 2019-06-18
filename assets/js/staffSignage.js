@@ -1,10 +1,4 @@
-
-
-//  https://docs.google.com/spreadsheets/d/1rf3Ni0TRr6paXqN-kX33L292RhX1vTPBbw4diIOL6EY/edit#gid=0
-
-//    1rf3Ni0TRr6paXqN-kX33L292RhX1vTPBbw4diIOL6EY
-
-//example google sheet get: "https://sheets.googleapis.com/v4/spreadsheets/spreadsheetId/values/Sheet1!A1:D5";
+console.log("staffSignage.js is online");
 
 const clock = document.getElementById('clock');
 
