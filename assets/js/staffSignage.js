@@ -14,16 +14,18 @@ setInterval(updateTime, 1000);
 
 
 const Http = new XMLHttpRequest();
-const url = "https://sheets.googleapis.com/v4/spreadsheets/1GnI7OZ-uzE4qzCQh8zsHNFi9yA9z6_z7KMUg14yZHYg/values/A1%3AB12?valueRenderOption=FORMATTED_VALUE&key=AIzaSyAQQWeauYhpITuv3oyMfBenmj27TI7OOtA"
+const url = "https://sheets.googleapis.com/v4/spreadsheets/1GnI7OZ-uzE4qzCQh8zsHNFi9yA9z6_z7KMUg14yZHYg/values/A1%3AE12?valueRenderOption=FORMATTED_VALUE&key=AIzaSyAQQWeauYhpITuv3oyMfBenmj27TI7OOtA"
 ;
 
 Http.open("GET", url);
 Http.send();                                                                                                                                                                                                                      
 
 Http.onreadystatechange=(e)=>{
-	result = JSON.parse(Http.responseText);
-	populate(result);
-
+	if(Http.readyState == XMLHttpRequest.DONE){
+		result = JSON.parse(Http.responseText);
+		console.log(result);
+		populate(result);
+	}
 }
 
 
